@@ -1,0 +1,371 @@
+:root {
+    --primary: #e8a1a8; /* Soft pink */
+    --secondary: #f8d7da;
+    --accent: #d87a86;
+    --light: #fff9fa;
+    --dark: #5a3a3e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background-size: cover; /* Ensure image covers the area */
+    background-position: center; /* Center the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+    animation: fadeIn 2s ease-out; /* Added fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+    animation: slideInUp 1.5s ease-out; /* Added slide-in animation */
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem; /* Slightly larger */
+    font-weight: 500; /* Slightly bolder */
+    margin-bottom: 1.2rem; /* Adjusted margin */
+    letter-spacing: 3px; /* More spacing */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem; /* Slightly larger */
+    font-weight: 300;
+    margin-bottom: 2.5rem; /* Adjusted margin */
+    letter-spacing: 6px; /* More spacing */
+    text-transform: uppercase; /* Uppercase for elegance */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.couple-names {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /* Larger */
+    margin: 3.5rem 0; /* Adjusted margin */
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.date {
+    font-size: 1.7rem; /* Larger */
+    letter-spacing: 4px; /* More spacing */
+    margin-bottom: 3.5rem; /* Adjusted margin */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.divider {
+    width: 180px; /* Wider */
+    height: 4px; /* Thicker */
+    background: var(--secondary);
+    margin: 2.5rem auto; /* Adjusted margin */
+    border-radius: 2px; /* Slightly rounded */
+}
+
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    animation: bounce 2s infinite; /* Animation for bouncing effect */
+    cursor: pointer;
+    z-index: 3; /* Ensure it's above other elements */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-15px); }
+    60% { transform: translateX(-50%) translateY(-7px); }
+}
+
+.section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem; /* Slightly larger */
+    text-align: center;
+    margin-bottom: 3.5rem; /* Adjusted margin */
+    color: var(--primary);
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 90px; /* Wider */
+    height: 3px; /* Thicker */
+    background: var(--accent);
+    margin: 1.2rem auto; /* Adjusted margin */
+    border-radius: 1.5px;
+}
+
+.couple-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+.bride, .groom {
+    flex: 1;
+    min-width: 300px;
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 220px; /* Slightly larger */
+    height: 220px; /* Slightly larger */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--secondary); /* Thicker border */
+    margin: 0 auto 1.8rem; /* Adjusted margin */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+}
+
+.bride h3, .groom h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; /* Slightly larger */
+    color: var(--primary);
+    margin-bottom: 1.2rem; /* Adjusted margin */
+}
+
+.ampersand {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem; /* Larger */
+    align-self: center;
+    color: var(--accent);
+    padding: 0 1.5rem; /* More padding */
+}
+
+.event-details {
+    background: var(--primary);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.event-details .section-title {
+    color: white;
+}
+
+.event-details .section-title:after {
+    background: var(--secondary);
+}
+
+.event-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem; /* More gap */
+    margin-top: 3.5rem; /* Adjusted margin */
+}
+
+.event-card {
+    background: white;
+    color: var(--dark);
+    padding: 2.5rem; /* More padding */
+    border-radius: 8px; /* More rounded */
+    flex: 1;
+    min-width: 320px; /* Slightly larger min-width */
+    max-width: 450px; /* Slightly larger max-width */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Add hover effect */
+}
+
+.event-card:hover {
+    transform: translateY(-8px); /* Lift on hover */
+}
+
+.event-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; /* Slightly larger */
+    margin-bottom: 1.8rem; /* Adjusted margin */
+    color: var(--primary);
+}
+
+.event-card i {
+    font-size: 2.5rem; /* Larger icons */
+    color: var(--accent);
+    margin-bottom: 1.5rem; /* Adjusted margin */
+}
+
+.event-card p {
+    margin-bottom: 0.8rem; /* More spacing */
+}
+
+.map-link {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.9rem 1.8rem; /* More padding */
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 1.8rem; /* Adjusted margin */
+    font-size: 1rem; /* Slightly larger font */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow to button */
+}
+
+.map-link:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; /* More gap */
+    margin-top: 3.5rem; /* Adjusted margin */
+}
+
+.gallery-item {
+    height: 320px; /* Slightly taller */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Add shadow */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slightly less aggressive zoom */
+}
+
+.rsvp {
+    background: var(--light);
+    text-align: center;
+}
+
+.rsvp-form {
+    background-color: white;
+    padding: 3rem; /* More padding */
+    border-radius: 10px; /* More rounded */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Stronger shadow */
+    max-width: 650px; /* Wider form */
+    margin: 3.5rem auto 0; /* Adjusted margin */
+    text-align: left;
+    display: none; /* Hidden by default */
+    transform: translateY(30px); /* More pronounced initial slide */
+    opacity: 0;
+    transition: all 0.6s ease-out; /* Slower transition */
+}
+
+.rsvp-form.active {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.form-group {
+    margin-bottom: 1.8rem; /* More spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem; /* Adjusted margin */
+    font-weight: 600; /* Bolder label */
+    color: var(--dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem; /* More padding */
+    border: 1px solid var(--secondary);
+    border-radius: 5px; /* Slightly more rounded */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem; /* Slightly larger font */
+    color: var(--dark);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(232, 161, 168, 0.3); /* Stronger shadow on focus */
+}
+
+.radio-group {
+    display: flex;
+    gap: 2rem; /* More gap */
+    flex-wrap: wrap;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem; /* Adjusted margin */
+}
+
+.radio-option input[type="radio"],
+.radio-option input[type="checkbox"] {
+    margin-right: 1rem; /* More margin */
+    appearance: none;
+    width: 20px; /* Larger */
+    height: 20px; /* Larger */
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.radio-option input[type="checkbox"] {
+    border-radius: 5px; /* Square for checkboxes */
+}
+
+.radio-option input[type="radio"]:checked::before {
+    content: '';
+    width: 12px; /* Larger dot */
+    height: 12px; /* Larger dot */
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+   

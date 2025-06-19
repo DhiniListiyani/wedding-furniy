@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Undangan Pernikahan Dhini &amp; Fazry
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   :root {
+            --primary: #e8a1a8; /* Soft pink */
+            --secondary: #f8d7da;
+            --accent: #d87a86;
+            --light: #fff9fa;
+            --dark: #5a3a3e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background-size: cover; /* Ensure image covers the area */
+            background-position: center; /* Center the image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            position: relative;
+            animation: fadeIn 2s ease-out; /* Added fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+            animation: slideInUp 1.5s ease-out; /* Added slide-in animation */
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem; /* Slightly larger */
+            font-weight: 500; /* Slightly bolder */
+            margin-bottom: 1.2rem; /* Adjusted margin */
+            letter-spacing: 3px; /* More spacing */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better readability */
+        }
+        
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem; /* Slightly larger */
+            font-weight: 300;
+            margin-bottom: 2.5rem; /* Adjusted margin */
+            letter-spacing: 6px; /* More spacing */
+            text-transform: uppercase; /* Uppercase for elegance */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        
+        .couple-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem; /* Larger */
+            margin: 3.5rem 0; /* Adjusted margin */
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .date {
+            font-size: 1.7rem; /* Larger */
+            letter-spacing: 4px; /* More spacing */
+            margin-bottom: 3.5rem; /* Adjusted margin */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        }
+        
+        .divider {
+            width: 180px; /* Wider */
+            height: 4px; /* Thicker */
+            background: var(--secondary);
+            margin: 2.5rem auto; /* Adjusted margin */
+            border-radius: 2px; /* Slightly rounded */
+        }
+
+        .scroll-down-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 2.5rem;
+            animation: bounce 2s infinite; /* Animation for bouncing effect */
+            cursor: pointer;
+            z-index: 3; /* Ensure it's above other elements */
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-15px); }
+            60% { transform: translateX(-50%) translateY(-7px); }
+        }
+        
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem; /* Slightly larger */
+            text-align: center;
+            margin-bottom: 3.5rem; /* Adjusted margin */
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 90px; /* Wider */
+            height: 3px; /* Thicker */
+            background: var(--accent);
+            margin: 1.2rem auto; /* Adjusted margin */
+            border-radius: 1.5px;
+        }
+        
+        .couple-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 4rem 0;
+        }
+        
+        .bride, .groom {
+            flex: 1;
+            min-width: 300px;
+            padding: 0 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-image {
+            width: 220px; /* Slightly larger */
+            height: 220px; /* Slightly larger */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--secondary); /* Thicker border */
+            margin: 0 auto 1.8rem; /* Adjusted margin */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+        }
+        
+        .bride h3, .groom h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem; /* Slightly larger */
+            color: var(--primary);
+            margin-bottom: 1.2rem; /* Adjusted margin */
+        }
+        
+        .ampersand {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem; /* Larger */
+            align-self: center;
+            color: var(--accent);
+            padding: 0 1.5rem; /* More padding */
+        }
+        
+        .event-details {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+        }
+        
+        .event-details .section-title {
+            color: white;
+        }
+        
+        .event-details .section-title:after {
+            background: var(--secondary);
+        }
+        
+        .event-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem; /* More gap */
+            margin-top: 3.5rem; /* Adjusted margin */
+        }
+        
+        .event-card {
+            background: white;
+            color: var(--dark);
+            padding: 2.5rem; /* More padding */
+            border-radius: 8px; /* More rounded */
+            flex: 1;
+            min-width: 320px; /* Slightly larger min-width */
+            max-width: 450px; /* Slightly larger max-width */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Stronger shadow */
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Add hover effect */
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px); /* Lift on hover */
+        }
+        
+        .event-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem; /* Slightly larger */
+            margin-bottom: 1.8rem; /* Adjusted margin */
+            color: var(--primary);
+        }
+        
+        .event-card i {
+            font-size: 2.5rem; /* Larger icons */
+            color: var(--accent);
+            margin-bottom: 1.5rem; /* Adjusted margin */
+        }
+        
+        .event-card p {
+            margin-bottom: 0.8rem; /* More spacing */
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.9rem 1.8rem; /* More padding */
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 1.8rem; /* Adjusted margin */
+            font-size: 1rem; /* Slightly larger font */
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow to button */
+        }
+
+        .map-link:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem; /* More gap */
+            margin-top: 3.5rem; /* Adjusted margin */
+        }
+        
+        .gallery-item {
+            height: 320px; /* Slightly taller */
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Add shadow */
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05); /* Slightly less aggressive zoom */
+        }
+        
+        .rsvp {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .rsvp-form {
+            background-color: white;
+            padding: 3rem; /* More padding */
+            border-radius: 10px; /* More rounded */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Stronger shadow */
+            max-width: 650px; /* Wider form */
+            margin: 3.5rem auto 0; /* Adjusted margin */
+            text-align: left;
+            display: none; /* Hidden by default */
+            transform: translateY(30px); /* More pronounced initial slide */
+            opacity: 0;
+            transition: all 0.6s ease-out; /* Slower transition */
+        }
+
+        .rsvp-form.active {
+            display: block;
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 1.8rem; /* More spacing */
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem; /* Adjusted margin */
+            font-weight: 600; /* Bolder label */
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem; /* More padding */
+            border: 1px solid var(--secondary);
+            border-radius: 5px; /* Slightly more rounded */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem; /* Slightly larger font */
+            color: var(--dark);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(232, 161, 168, 0.3); /* Stronger shadow on focus */
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 2rem; /* More gap */
+            flex-wrap: wrap;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.7rem; /* Adjusted margin */
+        }
+        
+        .radio-option input[type="radio"],
+        .radio-option input[type="checkbox"] {
+            margin-right: 1rem; /* More margin */
+            appearance: none;
+            width: 20px; /* Larger */
+            height: 20px; /* Larger */
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+
+        .radio-option input[type="checkbox"] {
+            border-radius: 5px; /* Square for checkboxes */
+        }
+        
+        .radio-option input[type="radio"]:checked::before {
+            content: '';
+            width: 12px; /* Larger dot */
+            height: 12px; /* Larger dot */
+            background-color: var(--primary);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: background-color 0.3s;
+        }
+
+        .radio-option input[type="checkbox"]:checked::before {
+            content: '\2713'; /* Checkmark character */
+            font-size: 16px; /* Larger checkmark */
+            color: white;
+            background-color: var(--primary);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .radio-option label {
+            margin-bottom: 0;
+            cursor: pointer;
+            font-size: 1.05rem; /* Slightly larger font */
+        }
+        
+        .submit-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 1.1rem 3rem; /* More padding */
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem; /* Larger font */
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-top: 2rem; /* More margin */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .submit-btn:hover {
+            background: var(--primary);
+            transform: translateY(-4px); /* More lift */
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* Stronger shadow */
+        }
+
+        .rsvp-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1.2rem 3.5rem; /* More padding */
+            margin-top: 2.5rem; /* More margin */
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem; /* Larger font */
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .rsvp-btn:hover {
+            background: var(--accent);
+            transform: translateY(-4px); /* More lift */
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* Stronger shadow */
+        }
+
+        .thank-you-message {
+            display: none; /* Hidden by default */
+            margin-top: 3.5rem; /* Adjusted margin */
+            padding: 2.5rem; /* More padding */
+            background-color: white;
+            border-radius: 10px; /* More rounded */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Stronger shadow */
+            max-width: 650px; /* Wider */
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: all 0.6s ease-out;
+        }
+
+        .thank-you-message.active {
+            display: block;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .thank-you-message i {
+            font-size: 3.5rem; /* Larger icon */
+            color: var(--primary);
+            margin-bottom: 1.5rem; /* Adjusted margin */
+        }
+
+        .greetings-section {
+            background: var(--secondary);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .greetings-section .section-title {
+            color: var(--dark);
+        }
+
+        .greetings-section .section-title:after {
+            background: var(--primary);
+        }
+
+        .greetings-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Slightly wider min-width */
+            gap: 2.5rem; /* More gap */
+            margin-top: 3.5rem; /* Adjusted margin */
+        }
+
+        .greeting-card {
+            background: white;
+            padding: 2.5rem; /* More padding */
+            border-radius: 10px; /* More rounded */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08); /* Stronger shadow */
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .greeting-card:hover {
+            transform: translateY(-5px); /* Lift on hover */
+        }
+
+        .greeting-card::before {
+            content: '\201C'; /* Left double quotation mark */
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem; /* Larger quote mark */
+            color: var(--primary);
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .greeting-card p {
+            font-style: italic;
+            margin-bottom: 1.2rem; /* Adjusted margin */
+            padding-left: 1.8rem; /* More indent */
+            font-size: 1.05rem; /* Slightly larger font */
+        }
+
+        .greeting-card .sender {
+            font-weight: 600;
+            color: var(--accent);
+            text-align: right;
+            display: block;
+            font-size: 0.95rem; /* Slightly larger font */
+        }
+        
+        /* Gift & Hadiah Section */
+        .gift-section {
+            background: var(--light);
+            text-align: center;
+        }
+
+        .gift-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem; /* More gap */
+            margin-top: 3.5rem; /* Adjusted margin */
+        }
+
+        .gift-card {
+            background: white;
+            padding: 3rem; /* More padding */
+            border-radius: 10px; /* More rounded */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Stronger shadow */
+            flex: 1;
+            min-width: 320px; /* Slightly wider */
+            max-width: 480px; /* Wider */
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gift-card:hover {
+            transform: translateY(-8px); /* Lift on hover */
+        }
+
+        .gift-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem; /* Slightly larger */
+            color: var(--primary);
+            margin-bottom: 1.8rem; /* Adjusted margin */
+        }
+
+        .gift-card i {
+            font-size: 3rem; /* Larger icon */
+            color: var(--accent);
+            margin-bottom: 1.8rem; /* Adjusted margin */
+        }
+
+        .bank-info p, .address-info p {
+            margin-bottom: 1rem; /* More spacing */
+            font-size: 1.15rem; /* Slightly larger font */
+        }
+
+        .bank-info strong, .address-info strong {
+            color: var(--accent);
+        }
+
+        .copy-button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.4rem; /* More padding */
+            border-radius: 6px; /* Slightly more rounded */
+            cursor: pointer;
+            font-size: 1rem; /* Slightly larger font */
+            margin-top: 1.2rem; /* Adjusted margin */
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Add shadow */
+        }
+
+        .copy-button:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .copy-button:active {
+            transform: translateY(1px);
+        }
+
+        .copy-confirmation {
+            display: none;
+            color: green;
+            font-size: 0.95rem; /* Slightly larger font */
+            margin-top: 0.6rem; /* Adjusted margin */
+            font-weight: 500;
+        }
+
+        .footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3.5rem; /* More padding */
+            font-size: 1rem; /* Slightly larger font */
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem; /* More gap */
+            margin: 3.5rem 0; /* Adjusted margin */
+        }
+        
+        .countdown-item {
+            background: rgba(255,255,255,0.25); /* Slightly less transparent */
+            padding: 1.2rem; /* More padding */
+            border-radius: 6px; /* More rounded */
+            min-width: 90px; /* Wider */
+            text-align: center;
+            backdrop-filter: blur(5px); /* Add blur effect for better contrast */
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem; /* Larger number */
+            font-weight: bold;
+        }
+        
+        .countdown-label {
+            font-size: 0.9rem; /* Slightly larger font */
+            text-transform: uppercase;
+            letter-spacing: 1.5px; /* More spacing */
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.4rem;
+                letter-spacing: 3px;
+            }
+            
+            .couple-names {
+                font-size: 2.5rem;
+            }
+            
+            .date {
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+            }
+
+            .scroll-down-indicator {
+                font-size: 2rem;
+                bottom: 20px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .ampersand {
+                display: block;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .profile-image {
+                width: 160px;
+                height: 160px;
+            }
+
+            .event-card {
+                padding: 2rem;
+                min-width: unset; /* Remove fixed min-width for better responsiveness */
+                max-width: 90%; /* Adjust max-width for smaller screens */
+            }
+
+            .gallery-item {
+                height: 250px;
+            }
+
+            .rsvp-form {
+                padding: 2rem;
+            }
+
+            .radio-group {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .gift-card {
+                padding: 2rem;
+                min-width: unset; /* Remove fixed min-width for better responsiveness */
+                max-width: 90%; /* Adjust max-width for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero h2 {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+            .couple-names {
+                font-size: 1.8rem;
+            }
+            .date {
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .countdown-item {
+                min-width: 70px;
+                padding: 0.8rem;
+            }
+            .countdown-number {
+                font-size: 2rem;
+            }
+            .countdown-label {
+                font-size: 0.7rem;
+            }
+            .bg-hero-style {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
+                no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+
+        }
+   body.cover-active {
+  overflow: hidden;
+}
+   html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  </style>
+ </head>
+ <body class="cover-active">
+  <div id="cover" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; cursor: pointer; padding: 0 20px;">
+  <h1 style="font-family: 'Playfair Display', serif; font-size: 4rem; letter-spacing: 2px; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+    Undangan Pernikahan
+  </h1>
+  <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.4);">
+    Kami Berbahagia Mengundang Anda
+  </h2>
+  <div style="width: 120px; height: 3px; background-color: #f8d7da; margin-bottom: 2rem;"></div>
+  <div style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+    Dhini <span style="font-weight: 300;">&</span> Furqon
+  </div>
+  <div style="font-size: 1.2rem; letter-spacing: 4px; text-shadow: 1px 1px 3px rgba(0,0,0,0.4);">
+    27 · 12 · 2025
+  </div>
+</div>
+
+  <audio autoplay="True" id="weddingMusic" loop="True">
+   <source src="lagu-pernikahan.mp3" type="audio/mpeg"/>
+   Browser Anda tidak mendukung pemutar audio.
+  </audio>
+  <button id="musicToggle" style="position: fixed; top: 20px; right: 20px; z-index: 999; background: var(--primary); color: white; border: none; border-radius: 50%; padding: 10px; font-size: 1.2rem; cursor: pointer;">
+   🔈
+  </button>
+  <section class="hero" id="hero-section">
+   <div class="hero-content">
+    <h1>
+     Undangan Pernikahan
+    </h1>
+    <h2>
+     Kami Berbahagia Mengundang Anda
+    </h2>
+    <div class="divider">
+    </div>
+    <div class="couple-names">
+     Dhini
+     <span style="font-weight: 300;">
+      &amp;
+     </span>
+     Furqon
+    </div>
+    <div class="date">
+     27 • 12 • 2025
+    </div>
+   </div>
+   <div class="scroll-down-indicator" onclick="document.getElementById('save-the-date-section').scrollIntoView({ behavior: 'smooth' });">
+    <i class="fas fa-chevron-down">
+    </i>
+   </div>
+  </section>
+  <section class="section bg-hero-style" id="save-the-date-section">
+   <h2 class="section-title">
+    Save The Date
+   </h2>
+   <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+    Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa, kami bermaksud menyelenggarakan pernikahan kami yang akan dilaksanakan pada:
+   </p>
+   <div class="countdown">
+    <div class="countdown-item">
+     <div class="countdown-number" id="days">
+      00
+     </div>
+     <div class="countdown-label">
+      Hari
+     </div>
+    </div>
+    <div class="countdown-item">
+     <div class="countdown-number" id="hours">
+      00
+     </div>
+     <div class="countdown-label">
+      Jam
+     </div>
+    </div>
+    <div class="countdown-item">
+     <div class="countdown-number" id="minutes">
+      00
+     </div>
+     <div class="countdown-label">
+      Menit
+     </div>
+    </div>
+    <div class="countdown-item">
+     <div class="countdown-number" id="seconds">
+      00
+     </div>
+     <div class="countdown-label">
+      Detik
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="section bg-hero-style">
+   <h2 class="section-title">
+    Pasangan Pengantin
+   </h2>
+   <div class="couple-info">
+    <div class="bride">
+     <img alt="Dhini Listiyani" class="profile-image" src="niycan.jpg"/>
+     <h3>
+      Dhini Listiyani Putri Rahmani, S.Kom
+     </h3>
+     <p>
+      Putri dari Bapak Edi Rahmani &amp; Ibu Suryani
+     </p>
+    </div>
+    <div class="ampersand">
+     &amp;
+    </div>
+    <div class="groom">
+     <img alt="Furqon Nurhalim" class="profile-image" src="ayang.jpg"/>
+     <h3>
+      Muhammad Furqon Nurhalim, S.Kom., M.Kom
+     </h3>
+     <p>
+      Putra dari Bapak Ahmad &amp; Ibu Aisyah
+     </p>
+    </div>
+   </div>
+  </section>
+  <section class="section event-details">
+   <h2 class="section-title">
+    Detail Acara
+   </h2>
+   <div class="event-cards">
+    <div class="event-card">
+     <i class="fas fa-mosque">
+     </i>
+     <h3>
+      Akad Nikah
+     </h3>
+     <p>
+      <i class="far fa-calendar-alt">
+      </i>
+      Sabtu, 27 Desember 2025
+     </p>
+     <p>
+      <i class="far fa-clock">
+      </i>
+      08.00 - 10.00 WIB
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt">
+      </i>
+      Masjid Al-Barkah, Jakarta
+     </p>
+     <a class="map-link" href="https://maps.app.goo.gl/ContohAkadNikahLocation" target="_blank">
+      <i class="fas fa-map-marked-alt">
+      </i>
+      Lihat Lokasi
+     </a>
+    </div>
+    <div class="event-card">
+     <i class="fas fa-glass-cheers">
+     </i>
+     <h3>
+      Resepsi Pernikahan
+     </h3>
+     <p>
+      <i class="far fa-calendar-alt">
+      </i>
+      Sabtu, 27 Desember 2025
+     </p>
+     <p>
+      <i class="far fa-clock">
+      </i>
+      11.00 - 15.00 WIB
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt">
+      </i>
+      Grand Ballroom, Hotel Majestic
+     </p>
+     <a class="map-link" href="https://maps.app.goo.gl/ContohResepsiLocation" target="_blank">
+      <i class="fas fa-map-marked-alt">
+      </i>
+      Lihat Lokasi
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="section">
+   <h2 class="section-title">
+    Gallery
+   </h2>
+   <div class="gallery">
+    <div class="gallery-item">
+     <img alt="Prewedding 1" src="prewed 1.jpeg"/>
+    </div>
+    <div class="gallery-item">
+     <img alt="Prewedding 2" src="prewed 2.jpeg"/>
+    </div>
+    <div class="gallery-item">
+     <img alt="Prewedding 3" src="prewed 3.jpeg"/>
+    </div>
+    <div class="gallery-item">
+     <img alt="Prewedding 4" src="prewed 4.jpeg"/>
+    </div>
+    <div class="gallery-item">
+     <img alt="Prewedding 5" src="prewed 5.jpeg"/>
+    </div>
+    <div class="gallery-item">
+     <img alt="Prewedding 6" src="prewed 6.jpeg"/>
+    </div>
+   </div>
+  </section>
+  <section class="section rsvp" id="rsvp-section">
+   <h2 class="section-title">
+    Konfirmasi Kehadiran
+   </h2>
+   <p>
+    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+   </p>
+   <button class="rsvp-btn" id="show-rsvp-btn">
+    RSVP Sekarang
+   </button>
+   <div class="rsvp-form" id="rsvpForm">
+    <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--primary);">
+     Form Konfirmasi Kehadiran
+    </h3>
+    <form id="weddingRsvpForm">
+     <div class="form-group">
+      <label for="name">
+       Nama Lengkap*
+      </label>
+      <input class="form-control" id="name" required="" type="text"/>
+     </div>
+     <div class="form-group">
+      <label for="email">
+       Email
+      </label>
+      <input class="form-control" id="email" type="email"/>
+     </div>
+     <div class="form-group">
+      <label for="phone">
+       Nomor WhatsApp*
+      </label>
+      <input class="form-control" id="phone" required="" type="tel"/>
+     </div>
+     <div class="form-group">
+      <label for="guestCount">
+       Jumlah Tamu yang Hadir*
+      </label>
+      <select class="form-control" id="guestCount" required="">
+       <option value="">
+        Pilih jumlah tamu
+       </option>
+       <option value="1">
+        1 Orang
+       </option>
+       <option value="2">
+        2 Orang
+       </option>
+       <option value="3">
+        3 Orang
+       </option>
+       <option value="4">
+        4 Orang
+       </option>
+       <option value="5">
+        5 Orang
+       </option>
+      </select>
+     </div>
+     <div class="form-group">
+      <label>
+       Konfirmasi Kehadiran*
+      </label>
+      <div class="radio-group">
+       <div class="radio-option">
+        <input id="attend-yes" name="attendance" required="" type="radio" value="Hadir"/>
+        <label for="attend-yes">
+         Hadir
+        </label>
+       </div>
+       <div class="radio-option">
+        <input id="attend-no" name="attendance" type="radio" value="Tidak Hadir"/>
+        <label for="attend-no">
+         Tidak Hadir
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group" id="eventSelection" style="display: none;">
+      <label>
+       Acara yang akan dihadiri
+      </label>
+      <div class="radio-group" style="flex-direction: column; gap: 0.5rem;">
+       <div class="radio-option">
+        <input id="event-akad" name="events" type="checkbox" value="Akad Nikah"/>
+        <label for="event-akad">
+         Akad Nikah
+        </label>
+       </div>
+       <div class="radio-option">
+        <input id="event-resepsi" name="events" type="checkbox" value="Resepsi"/>
+        <label for="event-resepsi">
+         Resepsi
+        </label>
+       </div>
+       <div class="radio-option">
+        <input id="event-keduanya" name="events" type="checkbox" value="Kedua Acara"/>
+        <label for="event-keduanya">
+         Kedua Acara
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="message">
+       Pesan/Ucapan (opsional)
+      </label>
+      <textarea class="form-control" id="message" placeholder="Tulis pesan atau ucapan selamat Anda di sini..." rows="4"></textarea>
+     </div>
+     <button class="submit-btn" type="submit">
+      Kirim Konfirmasi
+     </button>
+    </form>
+   </div>
+   <div class="thank-you-message" id="thankYouMessage">
+    <i class="fas fa-heart">
+    </i>
+    <h3 style="color: var(--primary); margin-bottom: 1rem;">
+     Terima Kasih!
+    </h3>
+    <p>
+     Konfirmasi kehadiran Anda telah kami terima.
+    </p>
+    <p>
+     Kami sangat menantikan kehadiran Anda di hari bahagia kami.
+    </p>
+   </div>
+  </section>
+  <section class="greetings-section">
+   <h2 class="section-title">
+    Ucapan &amp; Doa
+   </h2>
+   <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--dark);">
+    Kirimkan doa dan ucapan terbaik Anda untuk kebahagiaan Dhini &amp; Furqon
+   </p>
+   <div class="greetings-list" id="greetingsList">
+    <div class="greeting-card">
+     <p>
+      "Selamat menempuh hidup baru Dhini &amp; Furqon! Semoga selalu dilimpahi kebahagiaan dan menjadi keluarga sakinah, mawaddah, warahmah."
+     </p>
+     <span class="sender">
+      - Keluarga Besar Budi Santoso
+     </span>
+    </div>
+    <div class="greeting-card">
+     <p>
+      "Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khair. Selamat atas pernikahannya ya!"
+     </p>
+     <span class="sender">
+      - Sahabat Tersayang
+     </span>
+    </div>
+   </div>
+  </section>
+  <section class="section gift-section">
+   <h2 class="section-title">
+    Kirim Hadiah
+   </h2>
+   <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+    Doa restu dari Bapak/Ibu/Saudara/i sekalian sudah merupakan karunia yang tak ternilai harganya bagi kami.
+            Namun, jika Bapak/Ibu/Saudara/i ingin memberikan tanda kasih, dapat melalui pilihan di bawah ini:
+   </p>
+   <div class="gift-options">
+    <div class="gift-card">
+     <i class="fas fa-university">
+     </i>
+     <h3>
+      Transfer Bank
+     </h3>
+     <div class="bank-info">
+      <p>
+       Bank:
+       <strong>
+        BCA
+       </strong>
+      </p>
+      <p>
+       Nomor Rekening:
+       <strong id="rekeningBCA">
+        1234567890
+       </strong>
+      </p>
+      <p>
+       Atas Nama:
+       <strong>
+        Dhini Listiyani
+       </strong>
+      </p>
+      <button class="copy-button" onclick="copyToClipboard('rekeningBCA', this)">
+       Salin Nomor Rekening
+      </button>
+      <span class="copy-confirmation" id="copyConfirmBCA">
+       Disalin!
+      </span>
+     </div>
+     <div class="bank-info" style="margin-top: 1.5rem;">
+      <p>
+       Bank:
+       <strong>
+        Mandiri
+       </strong>
+      </p>
+      <p>
+       Nomor Rekening:
+       <strong id="rekeningMandiri">
+        0987654321
+       </strong>
+      </p>
+      <p>
+       Atas Nama:
+       <strong>
+        Muhammad Furqon Nurhalim
+       </strong>
+      </p>
+      <button class="copy-button" onclick="copyToClipboard('rekeningMandiri', this)">
+       Salin Nomor Rekening
+      </button>
+      <span class="copy-confirmation" id="copyConfirmMandiri">
+       Disalin!
+      </span>
+     </div>
+    </div>
+    <div class="gift-card">
+     <i class="fas fa-gift">
+     </i>
+     <h3>
+      Pengiriman Hadiah
+     </h3>
+     <div class="address-info">
+      <p>
+       Alamat:
+       <strong>
+        Jl. Kebahagiaan No. 10
+       </strong>
+      </p>
+      <p>
+       Kota:
+       <strong>
+        Jakarta Pusat
+       </strong>
+      </p>
+      <p>
+       Kode Pos:
+       <strong>
+        10110
+       </strong>
+      </p>
+      <p>
+       Penerima:
+       <strong>
+        Dhini &amp; Furqon
+       </strong>
+      </p>
+      <p>
+       No. Telepon:
+       <strong>
+        0812-3456-7890
+       </strong>
+      </p>
+      <button class="copy-button" onclick="copyToClipboard('alamatHadiah', this)">
+       Salin Alamat
+      </button>
+      <span class="copy-confirmation" id="copyConfirmAddress">
+       Disalin!
+      </span>
+      <p id="alamatHadiah" style="display: none;">
+       Jl. Kebahagiaan No. 10, Jakarta Pusat, 10110 (Dhini &amp; Furqon, 0812-3456-7890)
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="footer">
+   <p>
+    "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya."
+   </p>
+   <p style="margin-top: 1rem;">
+    (QS. Ar-Rum: 21)
+   </p>
+   <div class="divider" style="margin: 2rem auto; background: rgba(255,255,255,0.3);">
+   </div>
+   <p>
+    Terima kasih atas doa dan restunya
+   </p>
+   <p style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-top: 1rem;">
+    Dhini &amp; Furqon
+   </p>
+  </footer>
+  <script>
+   // Countdown Timer
+        function updateCountdown() {
+            // Gunakan tanggal saat ini untuk perhitungan mundur
+            const weddingDate = new Date("December 27, 2025 08:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+                clearInterval(countdownInterval); // Stop the countdown
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        }
+        
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call to display immediately
+
+        // RSVP Form Functionality
+        const showRsvpBtn = document.getElementById('show-rsvp-btn');
+        const rsvpFormDiv = document.getElementById('rsvpForm');
+        const thankYouMessageDiv = document.getElementById('thankYouMessage');
+        const weddingRsvpForm = document.getElementById('weddingRsvpForm');
+        const attendanceRadios = document.querySelectorAll('input[name="attendance"]');
+        const eventSelectionDiv = document.getElementById('eventSelection');
+        const greetingsList = document.getElementById('greetingsList');
+
+        showRsvpBtn.addEventListener('click', function() {
+            rsvpFormDiv.classList.add('active');
+            this.style.display = 'none';
+            // Scroll to form
+            rsvpFormDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+        
+        weddingRsvpForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            
+            // Simpan data form (pada implementasi nyata bisa dikirim ke server)
+            const formData = {
+                name: name,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                guestCount: document.getElementById('guestCount').value,
+                attendance: document.querySelector('input[name="attendance"]:checked').value,
+                events: Array.from(document.querySelectorAll('input[name="events"]:checked')).map(el => el.value),
+                message: message
+            };
+            
+            console.log('Form Data:', formData); // Untuk debugging
+            
+            // Tambahkan ucapan ke daftar ucapan jika ada pesan dan tamu hadir
+            if (message && formData.attendance === 'Hadir') { 
+                const newGreetingCard = document.createElement('div');
+                newGreetingCard.classList.add('greeting-card');
+                newGreetingCard.innerHTML = `
+                    <p>"${message}"</p>
+                    <span class="sender">- ${name}</span>
+                `;
+                greetingsList.prepend(newGreetingCard); // Add to the beginning of the list
+            }
+
+            // Tampilkan pesan terima kasih
+            rsvpFormDiv.classList.remove('active');
+            thankYouMessageDiv.classList.add('active');
+            
+            // Reset form
+            this.reset();
+            eventSelectionDiv.style.display = 'none'; // Hide event selection after submission
+            
+            // Scroll ke pesan terima kasih
+            thankYouMessageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+        
+        // Tampilkan/sembunyikan pilihan acara berdasarkan konfirmasi kehadiran
+        attendanceRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'Hadir') {
+                    eventSelectionDiv.style.display = 'block';
+                } else {
+                    eventSelectionDiv.style.display = 'none';
+                    // Uncheck all event checkboxes if not attending
+                    document.querySelectorAll('input[name="events"]').forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+                }
+            });
+        });
+
+        // Function to copy text to clipboard
+        function copyToClipboard(elementId, buttonElement) {
+            let textToCopy;
+            if (elementId === 'alamatHadiah') {
+                // For address, retrieve the hidden full text
+                textToCopy = document.getElementById(elementId).innerText;
+            } else {
+                // For bank accounts, retrieve the strong tag's innerText
+                textToCopy = document.getElementById(elementId).innerText;
+            }
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const confirmId = `copyConfirm${elementId.replace('rekening', '').replace('alamat', '')}`;
+                const confirmationSpan = document.getElementById(confirmId);
+                if (confirmationSpan) {
+                    confirmationSpan.style.display = 'inline';
+                    setTimeout(() => {
+                        confirmationSpan.style.display = 'none';
+                    }, 2000); // Hide after 2 seconds
+                }
+            }).catch(err => {
+                console.error('Gagal menyalin: ', err);
+                alert('Gagal menyalin. Silakan salin manual.');
+            });
+        }
+  </script>
+  <script>
+   const music = document.getElementById('weddingMusic');
+const toggleBtn = document.getElementById('musicToggle');
+let isPlaying = true;
+
+toggleBtn.addEventListener('click', () => {
+  if (isPlaying) {
+    music.pause();
+    toggleBtn.textContent = '🔇';
+  } else {
+    music.play();
+    toggleBtn.textContent = '🔈';
+  }
+  isPlaying = !isPlaying;
+});
+
+document.body.addEventListener('click', function firstClick() {
+  music.play().catch(() => {});
+  document.body.removeEventListener('click', firstClick);
+});
+  </script>
+  <script>
+   const cover = document.getElementById('cover');
+document.body.classList.add('cover-active');
+
+cover.addEventListener('click', function () {
+  cover.style.display = 'none';
+  document.body.classList.remove('cover-active');
+});
+  </script>
+ </body>
+</html>
